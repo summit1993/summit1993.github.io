@@ -16,7 +16,7 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://github.com/images/resnet/resnet.png">
 <meta property="og:image" content="https://github.com/images/resnet/block.png">
-<meta property="og:updated_time" content="2019-02-06T00:42:20.972Z">
+<meta property="og:updated_time" content="2019-02-08T03:03:27.505Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="code analyse: official pytorch--resnet">
 <meta name="twitter:description" content="As one of the most popular netwok, resnet has applied in many computer vision tasks, such as classification, object detection (e.g., as the backbone), GAN and so on. This aritical is the code analyse">
@@ -146,7 +146,7 @@
   
 
   <div class="content" itemprop="articleBody">
-    <p>As one of the most popular netwok, resnet has applied in many computer vision tasks, such as classification, object detection (e.g., as the backbone), GAN and so on. This aritical is the code analyse about the resnet with official pytorch. The code can be found in <a href="https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py">https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py</a>. For chinese analyse, you can refer to <a href="https://www.cnblogs.com/wzyuan/p/9880342.html" target="_blank" rel="noopener">https://www.cnblogs.com/wzyuan/p/9880342.html</a> (which is not written by me). </p>
+    <p>As one of the most popular netwok, resnet has applied in many computer vision tasks, such as classification, object detection (e.g., as the backbone), GAN and so on. This aritical is the code analyse about the resnet with official pytorch. The code can be found in <a href="https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py">https://github.com/pytorch/vision/blob/master/torchvision/models/resnet.py</a> (Besides, I recommend the code from mmdetection: <a href="https://github.com/summit1993/mmdetection/blob/master/mmdet/models/backbones/resnet.py">https://github.com/summit1993/mmdetection/blob/master/mmdet/models/backbones/resnet.py</a>). For chinese analyse, you can refer to <a href="https://www.cnblogs.com/wzyuan/p/9880342.html" target="_blank" rel="noopener">https://www.cnblogs.com/wzyuan/p/9880342.html</a> (which is not written by me). </p>
 <p>Resnet has series viesions: resnet18, resnet34, resnet50, resnet101, resnet152. Generally, they are similar with the structure, and different with the block type (BasicBlock or Bottleneck), numbers of blocks stacked, depth and so on. More details can be found in the following figure. </p>
 <p><img src="/images/resnet/resnet.png" alt="Fig. 1 Resnet Structure"></p>
 <h2 id="Block"><a href="#Block" class="headerlink" title="Block"></a>Block</h2><p>As showed in the following figure, there are two types of blocks, the fist is BasicBlock which is used in resnet18 and resnet34, and the second is Bottleneck which is used in other more depth resnet.<br><img src="/images/resnet/block.png" alt="Fig. 2 Resnet Block"></p>
